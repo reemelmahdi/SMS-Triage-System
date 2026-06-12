@@ -1,0 +1,19 @@
+id,original_text,actual_label
+001,"Hello, I have a severe headache and high fever, please help.",Medical Emergency
+002,"Habari, nina homa kali sana na kutapika.",Medical Emergency
+003,Can I schedule a checkup for next Tuesday?,Appointment Request
+004,Naomba kuona na daktari kesho saa nne.,Appointment Request
+005,What are the side effects of the new malaria pill?,General Health Info
+006,"My name is Sarah, phone +254712345678. I am bleeding.",Medical Emergency
+007,"Je, ni salama kunyonyesha nikiwa na homa?",General Health Info
+008,I missed my period and I am worried. Is this normal?,General Health Info
+009,Need to book appointment for my sister.,Appointment Request
+010,"Kichwa kinauma sana, siponi.",Medical Emergency
+011,Where is the clinic located?,General Health Info
+012,Nahitaji dawa ya kuzuia mimba.,General Health Info
+013,My daughter stopped breathing for a second!,Medical Emergency
+014,Nataka kuja kliniki.,Appointment Request
+015,Is abortion legal in this context?,General Health Info
+016,Do you sell fresh milk?,Other
+017,Hello?,Other
+018,My husband hits me when he is drunk.,Medical Emergency
