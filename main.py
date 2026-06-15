@@ -495,4 +495,4 @@ def interactive_mode():
 if __name__ == "__main__":
     df = run_batch()
     print(df[["id", "predicted_label", "final_route", "priority", "retrieved_source"]].to_string(index=False))
-    interactive_mode()
+    interactive_mode() 
