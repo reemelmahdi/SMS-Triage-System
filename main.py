@@ -288,6 +288,15 @@ SW_TO_EN = {
     "maumivu": "pain", "maumivu makali": "severe pain",
 }
 
+# -- English synonym mapping for terms not in the KB --
+EN_SYNONYMS = {
+    "hits me": "physical violence", "hit me": "physical violence",
+    "beats me": "physical violence", "beat me": "physical violence",
+    "drunk": "violence danger", "attacked": "physical violence",
+    "where is the clinic": "clinic location",
+    "clinic located": "clinic location",
+}
+
 _kb_paragraphs = None
 _tfidf_vectorizer = None
 _tfidf_matrix = None
@@ -318,6 +327,8 @@ def _translate_query(text):
     t = text.lower()
     for sw, en in sorted(SW_TO_EN.items(), key=lambda x: -len(x[0])):
         t = t.replace(sw, en)
+    for phrase, replacement in sorted(EN_SYNONYMS.items(), key=lambda x: -len(x[0])):
+        t = t.replace(phrase, replacement)
     return t
 
 
